@@ -1,0 +1,485 @@
+<!--When views.py renders the request, it will go here
+    And here index.html file is extending base.html 
+    So from here it go to base.html-->
+{% extends "base.html" %}
+
+<!--Whereever the block named title is there in base.html, "Home" will appear in that place-->
+{% block title %} Home {% endblock title %}
+    
+<!--Whereever the block named body is there in base.html, The following below will appear in that place-->
+{% block body %} 
+
+<!--First container-->
+<!-- 'my' is the margin top and below adjustment. It stands for margin y-axis-->
+<<div class="container my-4">
+  <center>
+      <h1 style="color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"><b><i>Ebaad CarzWorld - Your Car's Ultimate Destination</i></b></h1>
+  </center>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <style>
+      body {
+          
+          background-image: url('https://images3.alphacoders.com/928/thumb-1920-928072.jpg'); /* Replace with the actual path to your image */
+          background-size: cover; /* Adjust as needed, 'cover' ensures the image covers the entire background */
+          background-repeat: no-repeat; /* Prevent the image from repeating */
+          background-position: right; /* Center the background image */
+          filter: brightness(80%); 
+          height: 400px;
+          /* You can also add more properties like background-attachment, background-color, etc. */
+      }
+    </style> <br><br><br><br><br><br>
+
+
+
+
+
+
+
+    <div class="section-full bg-white content-inner-1 my-4"
+     style="background-repeat: no-repeat; background-position: right bottom -37px; margin-left: -190px;">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-7 about-contant">
+                <div class="m-b20">
+                    <h2 class="m-t0 m-b10 my-3">Ebaad<span class="text-primary"> CarZWorld</span></h2>
+                    <span class="text-secondry font-16">Modifying & Detailing</span>
+                    <div class="clear"></div>
+                </div>
+                <p class="m-b30">Ebaad CarZWorld is an upcoming leading brand in car modification, offering expert services to
+                                  enhance your vehicle's lifespan and transform it into a stunning masterpiece. With 
+                                  cutting-edge solutions and top-notch craftsmanship, we elevate style, performance, and
+                                  functionality, ensuring your car stands out and lasts longer. Trust Ebaad CarZWorld for
+                                  automotive excellence.</p>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-4 m-b15">
+                        <div class="icon-bx-wraper bx-style-1 p-tb15 p-lr10 center">
+                            <div class="icon-bx-sm radius bg-primary m-b5"> <a href="#" class="icon-cell"><i
+                                        class="fas fa-hard-hat"></i></a> </div>
+                            <div class="icon-content">
+                                <h2 class="text-primary m-t20 m-b10"><span class="counter">100</span>+</h2>
+                                <p>Supporters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 m-b15">
+                        <div class="icon-bx-wraper bx-style-1 p-tb15 p-lr10 center">
+                            <div class="icon-bx-sm radius bg-primary m-b5"> <a href="#" class="icon-cell"><i
+                                        class="ti-home"></i></a> </div>
+                            <div class="icon-content">
+                                <h2 class="text-primary m-t20 m-b10"><span class="counter">120</span>+</h2>
+                                <p>Online Presence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 m-b15">
+                        <div class="icon-bx-wraper bx-style-1 p-tb15 p-lr10 center">
+                            <div class="icon-bx-sm radius bg-primary m-b5"> <a href="#" class="icon-cell"><i
+                                        class="fa fa-car"></i></a> </div>
+                            <div class="icon-content">
+                                <h2 class="text-primary m-t20 m-b10"><span class="counter">1000</span>+</h2>
+                                <p>Modified Car Goals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>At Ebaad CarZWorld, we are dedicated to delivering unmatched quality and customer satisfaction, making us the trusted choice for car enthusiasts seeking longevity and exceptional transformations of their cars.</p>
+                
+            </div>
+            <div class="col-lg-5 about-img">
+                <img style="border-radius:0px 40px 0px 0px;" src="static/wash1.jpg" alt="" height="600px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Quick Enquiry-->
+
+<div class="section-full bg-black content-inner overlay-black-middle">
+ <!-- Our Projects  -->
+ <div class="section-full bg-img-fix content-inner overlay-black-middle"
+ style="background-image:url(images/background/bg1.jpg);">
+ <div class="container" >
+     <div class="container-fluid section-head  text-center text-white"><br>
+         <h2 class="text-uppercase">Quick Enquiry</h2>
+         <!-- <div class="dlab-separator-outer ">
+             <div class="dlab-separator bg-white style-skew"></div>
+         </div> -->
+         <h5>Ready to elevate your car's style and performance? Enquire with Ebaad CarZWorld now for a quick and expert car modification consultation</h5>
+     </div><br>
+     
+     <div class="section-full content-innerAAA bg-whiteAA contact-style-1">
+<div class="container">
+ <div class="row">
+
+     <!-- Left part start -->
+     <div class="col-lg-9 mx-auto bg-white clearfix">
+         <div class="p-a30 bg-white w-100 clearfix m-b30 ">
+
+             <h2></h2><center>Send Us Message!</center></h2><br>
+             <h4>We will reply within 8 Hours :)</h4>
+                <div class="dzFormMsg"></div>
+                <form method="post" class="dzForm" action="#">
+
+                   <div class="row">
+
+                     <div class="col-lg-6" style="padding: 12px;">
+                         <div class="form-group">
+                             <div class="input-group">
+                                 <input name="name" type="text" required class="form-control" placeholder="Your Name">
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-6" style="padding: 12px;">
+                         <div class="form-group">
+                             <div class="input-group"> 
+                                <input name="mail" type="email" class="form-control" required  placeholder="Your Email Id" >
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-6">
+                         <div class="form-group">
+                             <div class="input-group">
+                                 <input name="phone" type="text" required class="form-control" placeholder="Phone">
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="col-lg-6">
+                         <div class="form-group">
+                             <div class="input-group">
+                                 <input name="subject" type="text" required class="form-control" placeholder="Your Enquiry?">
+                             </div>
+                         </div>
+                     </div><br>
+
+                     <div class="col-lg-12 my-4">
+                        <center>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </center>
+                        </div>
+                  </div>
+                  
+             </form>
+         </div>
+     </div>
+     <!-- Left part End -->
+
+     <!-- Right part Start-->
+     <!--
+     <div class="col-lg-4 d-lg-flex">
+         <div class="p-a30 m-b30 border-1 contact-area align-self-stretch bg-white">
+            <h2 class="m-b10">Quick Contact</h2>
+            <p>We love to hear from you :)</p>
+             <ul class="no-margin">
+
+                 <li class="icon-bx-wraper left m-b30">
+                     <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="ti-location-pin"></i></a> </div>
+                     <div class="icon-content">
+                         <h6 class="text-uppercase m-tb0 dlab-tilte">Address:</h6>
+                         <p>Plot No 27, Industrial Area Phase - 1, Chandigarh - 160002</p>
+                     </div>
+                 </li>
+
+                 <li class="icon-bx-wraper left m-b30">
+                     <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="ti-email"></i></a> </div>
+                     <div class="icon-content">
+                        <h6 class="text-uppercase m-tb0 dlab-tilte">Email:</h6>
+                        <p>contact@kustomking.co.in</p>
+                     </div>
+                 </li>
+
+             </ul>
+             
+         </div>
+     </div>
+ </div>
+-->
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+
+
+
+
+<!--Slides-->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+      <div class="carousel-item active">
+          <img src="https://i.redd.it/je4ldw7iivm41.jpg" class="d-block mx-auto" alt="..." style="max-width: 70%; height: 500px;">
+          <div class="carousel-caption d-none d-md-block">
+              <h4 style="color: black;"><strong>Audi RS7 Matte Grey</strong></h4>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <img src="/static/newbie.jpg" class="d-block mx-auto" alt="..." style="max-width: 100%; height: 450px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 style="color: rgb(255, 246, 246);"><strong>Chevrolet Cruze Dark Night Edition</strong></h4>
+              <p></p>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <img src="https://di-uploads-pod3.dealerinspire.com/fletcherjonesmercedesbenzontario/uploads/2017/07/carwashbutton-min.jpg" class="d-block mx-auto" alt="..." style="max-width: 80%; height: 500px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 style="color: rgb(255, 246, 246);"><strong>Mercedes S-Class Shining to the Fullest</strong></h4>
+          </div>
+      </div>
+
+      <!-- Add more carousel items for additional slides -->
+      <div class="carousel-item">
+          <img src="https://www.cartoq.com/wp-content/uploads/2022/03/thar-modified-featured-1.jpg" class="d-block mx-auto" alt="..." style="max-width: 80%; height: 450px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 style="color: rgb(255, 246, 246);"><strong>Mahindra Thar Ready for the Weekend Safaris</strong></h4>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+          <img src="/static/ss10.jpg" class="d-block mx-auto" alt="..." style="max-width: 80%; height: 480px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 style="color: rgb(255, 246, 246);"><strong>Honda Accord v MT at it's best</strong></h4>
+          </div>
+      </div>
+  </div>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+</div>
+ 
+
+
+<!--Second container-->
+<div class="container my-5">
+
+<div class="section-head text-center ">
+
+  <h2 class="text-uppercase">
+    <strong><span style="color: white;">Our Best</span></strong>
+    <span class="text-primary"><strong> Services</strong></span>
+</h2>
+
+
+<p>At Ebaad CarZWorld, we offer exceptional car modification and detailing services. From reviving your car's shine to creating a pristine interior, we provide meticulous cleaning, polishing, and protection to enhance your driving experience. Trust us to transform your vehicle into a masterpiece.</p>
+</div>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      
+        <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://img.redbull.com/images/c_crop,x_0,y_0,h_938,w_1407/c_fill,w_1500,h_1000/q_auto,f_auto/redbullcom/2018/02/26/88a4fc86-8af6-4a69-a785-65290fec306c/how-to-clean-your-car" class="d-block w-100" alt="..." width="100" height="230">
+          <div class="card-body">
+            <p class="card-text"><b>Wheel Upgradation And Colouring</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://image.made-in-china.com/2f0j00FTWRVyhPHIuM/2020-New-Model-Automated-Touchless-Car-Wash-Machine-Automatic-Auto-Touchless-Car-Washing-Machine-Fast-Car-Washing-Touchless-Car-Washer-Auto-Car-Wash-Machine.jpg" class="d-block w-100" alt="..." width="100" height="230">
+            <div class="card-body">
+            <p class="card-text"><b>Advance Impurifying Techniques</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://tse3.mm.bing.net/th?id=OIP._buAAnF4__DcWZAGEZtcBwHaEK&pid=Api&P=0&h=180" alt="..." class="d-block w-100" alt="..." width="100" height="230">
+            <div class="card-body">
+            <p class="card-text"><b>All Typres of HeadLights Installation Available</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://www.mapa.co.za/wp-content/uploads/2018/11/Car-Wash-Article.jpg" alt=".." class="d-block w-100" alt="..." width="100" height="230">
+            <div class="card-body">
+            <p class="card-text"><b>Modifications related to Colours</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.oFoQPZ0HsVIaO95YIDIzIAHaE7&pid=Api&P=0&h=180" alt="..." class="d-block w-100" width="100" height="230">
+            <div class="card-body">
+            <p class="card-text"><b>Interior Cleaning And Repair</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://images.hgmsites.net/med/touch-car-wash_100748741_m.jpg" alt="..." class="d-block w-100" width="100" height="230">
+
+            <div class="card-body">
+            <p class="card-text"><b>Full Body Modification And Kit Install</b></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              </div>
+              <small class="text-body-secondary">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--The very last portion of the Home Page-->
+
+<style>
+  /* Custom styles for the black background color of the footer */
+  footer {
+      background-color: black;
+      color: white; /* Optional: Set text color to white for better visibility */
+      padding: 20px; /* Optional: Add padding for better spacing */
+  }
+</style>
+
+<footer class="pt-4 my-md-10 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2" src="https://tse2.mm.bing.net/th?id=OIP.0UaJW-KXB_3A6EnIkJ-kLQHaHX&pid=Api&P=0&h=180" alt="" width="30" height="22">
+      <small class="d-block mb-3 text-body-secondary">&copy; 2017–2023</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5 style="margin-left:40px">Features</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 style="margin-left:40px">Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5 style="margin-left:40px">About</h5>
+      <ul class="list-unstyled text-small">
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <style>
+      /* Add this style for the line above copyright */
+      .footer-top {
+          border-top: 1px solid #fff; /* You can adjust the color and thickness as needed */
+          padding-top: 10px; /* Adjust the padding for spacing */
+          margin-top: 20px; /* Adjust the margin for spacing */
+      }
+  
+      .coppyright {
+          color: #fff;
+          text-align: center;
+          padding-top: 15px; /* Add a bit more padding to create a gap */
+          font-size: small;
+      }
+  </style>
+  
+  <div class="footer-top">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-4"></div>
+              <div class="col-sm-4 col-xs-12 coppyright"> Copyright 2021, Ebaad CarzWorld. All Rights Reserved. Designed and Promoted by <a href="https://instagram.com/ebaad09">ebaadcarzworld.com</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<!--Icons-->
+<div style="display: flex; gap: 5px; margin: 10px; align-items: center;">
+  <a href="https://www.instagram.com/ebaad09" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 25px; height: 25px;">
+  </a>
+  <a href="https://www.facebook.com/ebaad.azam.5/" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/1200px-Facebook_logo_36x36.svg.png" alt="Facebook" style="width: 23px; height: 23px;">
+  </a>
+  <a href="https://www.linkedin.com/in/ebaadazam90" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+    <img src="https://itcnet.gr/wp-content/uploads/2020/09/Linkedin-logo-on-transparent-Background-PNG--800x800.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+  </a>
+  <a href="https://twitter.com/Ebaad0009" target="_blank" style="text-decoration: none; transition: transform 0.3s ease-in-out;">
+    <img src="https://www.seeklogo.net/wp-content/uploads/2016/11/twitter-icon-square-logo-preview.png" alt="Twitter" style="width: 28px; height: 28px;">
+  </a>
+</div>
+
+{% endblock body %} 

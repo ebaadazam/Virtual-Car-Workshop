@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %} Contact {% endblock title %}
+
+{% block body %} 
+
+<div class="container-fluid mx-0 px-0 py-0">
+    <div class="row">
+
+      <!--The col-md-6 class ensures that each column takes up half of the available width on medium-sized screens and larger-->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-4">
+                <img src="https://carsonridge.co.za/wp-content/uploads/site/Contact-us.jpg" class="d-block w-100" alt="..." width="300" height="500">
+            </div>
+
+            <!--Contact Us Text-->
+            <div class="col-md-6">
+              <header class="pb-2 bg-dark my-4 p-4 mb-2 border-bottom text-center">
+                  <a href="/" class="d-flex align-items-center text-decoration-none">
+                      <span class="fs-3 text-white mx-auto mb-2"><b>Contact Us</b></span>
+                  </a>
+              </header>
+          
+
+
+
+        <!--Contact Us Form starts here-->
+        <div class="container bg-light p-4 mb-3" style="padding: 20px">
+          <form method="post" action="/contact"  class="row g-3">
+            {% csrf_token %}
+
+            <!--Name TextBox-->
+            <div class="form-group col-md-5">
+              <label for="name" class="form-label"><b>Name</b></label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <!--Email TextBox-->
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><b>Email Address</b></label>
+                <input type="email" class="form-control" id="inputEmail4" name="email">
+              </div>
+
+            <!--Phone Number TextBox-->
+            <div class="col-md-5">
+              <label for="number" class="form-label"><b>Phone Number</b></label>
+              <input type="number" class="form-control" id="number" name="number">
+            </div>
+
+            <!--Service TextBox-->
+            <div class="col-10">
+              <label for="service" type="dropdown-menu" id="service" name="service" class="form-label"><b>Select the Service you want for your Car</b></label>
+              <select class="form-control" id="service" name="service">
+                <option value="car modification">Car Modification</option>
+                <option value="car repairing">Car Repairing</option>
+                <option value="car detailing">Car Detailing</option>
+                <option value="car washing">Car Washing</option>
+              </select>
+            </div>
+
+            <!--City and State TextBox-->
+            <div class="col-md-5">
+              <label for="inputCity" class="form-label"><b>City</b></label>
+              <input type="text" class="form-control" id="inputCity" name="city">
+            </div>
+            <div class="col-md-4">
+              <label for="text" class="form-label"><b>State</b></label>
+              <input type="state" class="form-control" id="state" name="state">
+            </div><br>
+
+            <!--Submit Button-->
+              <div class="col-12"><center>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </center></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<!--The very last portion of the Home Page-->
+
+<footer class="pt-4 my-md-5 pt-md-10 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2" src="https://tse2.mm.bing.net/th?id=OIP.0UaJW-KXB_3A6EnIkJ-kLQHaHX&pid=Api&P=0&h=180" alt="" width="30" height="22">
+      <small class="d-block mb-3 text-body-secondary">&copy; 2017–2023</small>
+    </div>
+  
+    <div class="col-6 col-md ma">
+      <h5  class="list-unstyled text-small" style="margin-left:-150px">For Additional Queries:</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" style="margin-left:-175px">Contact: +917668046325</a></li>
+        <li><a class="link-secondary text-decoration-none" style="margin-left:-210px">Gmail: ebaadazam82881@gmail.com</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+          
+
+{% endblock body %}
+
